@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Page</title>
+    <link rel="stylesheet" href="resume-style.css">
+</head>
+<body>
+
+    <div class="container">
+       
+        <!-- Adding Navigation Bar -->
+        <div class="nav">
+            <ul>
+                <li id="hname">Omkar Adsare</li>
+                <li><a href="index.html" id="ele">Home</a></li>
+                <li><a href="about.html" id="ele">About</a></li>
+                <li><a href="project.html" id="ele">Project</a></li>
+                <li id="Resume" href="#">Resume</li>
+                <li><a id="link-tag" href="contact-us.html" id="ele">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <div class="resume-section">
+                <div class="block">
+                    <button class="btn preview-btn" onclick="openPreview()">Preview Resume</button>
+                  <button class="btn download-btn" onclick="downloadPDF()" >Download CV</button>
+                </div>
+            </div>
+           <!-- Modal for Image Preview -->
+    <div id="resumeModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closePreview()">&times;</span>
+            
+            <img src="Image/Omkar-resume.png" alt="Resume Preview" class="preview-img">
+        </div>
+    </div>
+        </div>
+
+    </div>
+    <script src="script-res.js"></script>
+</body>
+</html>
